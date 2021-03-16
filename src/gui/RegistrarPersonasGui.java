@@ -18,7 +18,7 @@ import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 import javax.swing.JSeparator;
 
-public class VentanaGestionPersonas extends JDialog implements ActionListener{
+public class RegistrarPersonasGui extends JDialog implements ActionListener{
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField txtDocumento;
@@ -42,7 +42,7 @@ public class VentanaGestionPersonas extends JDialog implements ActionListener{
 	 * @param b 
 	 * @param ventanaPrincipal 
 	 */
-	public VentanaGestionPersonas(VentanaPrincipal ventanaPrincipal, boolean modal) {
+	public RegistrarPersonasGui(VentanaPrincipal ventanaPrincipal, boolean modal) {
 		super(ventanaPrincipal,modal);
 		setSize( 624, 423);
 		setLocationRelativeTo(null);
@@ -199,7 +199,7 @@ public class VentanaGestionPersonas extends JDialog implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource()==btnAgregarMascotas) {
-			VentanaGestionMascotas ventanaGestionMascotas=new VentanaGestionMascotas(null, true,txtDocumento.getText());
+			RegistrarMascotasGui ventanaGestionMascotas=new RegistrarMascotasGui(null, true,txtDocumento.getText());
 			ventanaGestionMascotas.setVisible(true);
 		}
 	}

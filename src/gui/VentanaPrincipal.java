@@ -137,16 +137,16 @@ public class VentanaPrincipal extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource()==itemRegistrarPersonas) {
-			VentanaGestionPersonas ventanaGestionPersonas=new VentanaGestionPersonas(this,true);
-			ventanaGestionPersonas.setVisible(true);
+			RegistrarPersonasGui RegistrarPersonas=new RegistrarPersonasGui(this,true);
+			RegistrarPersonas.setVisible(true);
 		}
 		if (e.getSource()==itemRegistrarMascotas) {
-			VentanaGestionMascotas ventanaGestionMascotas=new VentanaGestionMascotas(this, true,"");
-			ventanaGestionMascotas.setVisible(true);
+			RegistrarMascotasGui RegistrarMascotas=new RegistrarMascotasGui(this, true,"");
+			RegistrarMascotas.setVisible(true);
 		}
 		if (e.getSource()==itemRegistroProductos) {
-			VentanaGestionProductos ventanaGestionProductos=new VentanaGestionProductos(this, true);
-			ventanaGestionProductos.setVisible(true);
+			RegistrarProductosGui RegistrarProductos=new RegistrarProductosGui(this, true);
+			RegistrarProductos.setVisible(true);
 		}
 	}
 }
